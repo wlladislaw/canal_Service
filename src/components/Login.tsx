@@ -1,5 +1,30 @@
 import styled, { css }  from 'styled-components'
 
+// const padding = '3em'
+
+// const Section = styled.section`
+//   color: white;
+
+//   /* Pass variables as inputs */
+//   padding: ${padding};
+
+//   /* Adjust the background from the properties */
+//   background: ${props => props.background};
+// `
+
+
+const Container = styled.div`
+  background-color: #da7808;
+  border-radius: 5px;
+  padding: 1em;
+`
+
+const Title = styled.h1`
+  font-weight: 300,bold;
+`
+
+
+
 interface IBtn {
   primary: boolean,
 
@@ -23,6 +48,10 @@ ${props => props.primary && css`
   return (
     <div className='authContainer'>
 
+    <Container>
+    <Title> CANALSERVICE </Title>
+
+  </Container>
       <h1>Autorization</h1>
       <p>login</p>
       <p>password</p>
